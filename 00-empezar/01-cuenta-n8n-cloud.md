@@ -41,6 +41,8 @@ Todas las palabras nuevas, con un ejemplo cada una, están en el [glosario](../g
 4. Esperá a que la instancia arranque (puede tardar un par de minutos) y entrá al editor.
 
 > [!NOTE]
+> **En Nodo Cero vas a tener tu n8n Cloud.** Si la organización te da un acceso o un código de n8n Cloud, usalo para crear tu cuenta: te lo explican en la acreditación. Si no te llega, la prueba gratis alcanza para todo el día.
+
 > La prueba gratis de n8n Cloud dura 14 días, con las funciones del plan Pro y hasta 1000 ejecuciones, y no pide tarjeta. Si no pasás a un plan pago, al terminar la prueba n8n borra la instancia, y tenés 90 días para descargar tus workflows. Antes del día 14, exportá lo que hiciste: te contamos cómo en [Seguir construyendo](../seguir-construyendo.md#1-guardá-tus-workflows-antes-de-que-termine-la-prueba).
 
 ### 2. Recorré el editor
