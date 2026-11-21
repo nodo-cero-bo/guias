@@ -156,7 +156,7 @@ Las pantallas de n8n Cloud, Supabase, Clerk y Core cambian cada tanto. Si un bot
 | Hora | Qué pasa |
 |---|---|
 | 08:00 | Acreditación y café |
-| 12:30 | Almuerzo, con el apoyo de Clerk |
+| 12:00 | Almuerzo |
 | 14:30 | Refrigerio |
 | 15:00 | Presentaciones |
 | 15:45 | Cierre, menciones y foto grupal |
