@@ -1,0 +1,31 @@
+name: Auditar guías
+
+# Revisa cada guía contra las reglas de la especificación: texto (voseo, sin signos de exclamación
+# ni emojis, «n8n» en minúscula, sin marcas ni frases prohibidas), sin claves ni datos personales,
+# la ficha de cada guía, los enlaces internos y anclas, los ids de workflows y los UTM de Team1.
+# Si algo falla, el check queda en rojo. Los enlaces externos se prueban a mano con --red
+# (los sitios externos a veces no responden a los robots y no queremos falsos rojos).
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  auditar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Traer el repo
+        uses: actions/checkout@v5
+
+      - name: Preparar Node 24
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Auditar las guías
+        run: node tools/auditar_guias.mjs
