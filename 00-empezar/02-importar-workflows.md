@@ -9,6 +9,8 @@ Tres formas de traer a tu n8n los workflows de Nodo Cero, listos para usar: pega
 | **Tiempo estimado** | 10 minutos por workflow |
 | **Qué necesitás** | Tu cuenta de n8n ([guía 01](01-cuenta-n8n-cloud.md)) y elegir un workflow de la [página](https://nodo-cero-bo.github.io) o del [repo de workflows](https://github.com/nodo-cero-bo/workflows). |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [JSON](../glosario.md#json), [nota adhesiva](../glosario.md#nota-adhesiva), [credencial](../glosario.md#credencial), [webhook](../glosario.md#webhook), [URL de producción](../glosario.md#url-de-prueba-y-url-de-producción) y [publicar](../glosario.md#publicar).
+
 ## Dónde están los workflows
 
 Todos viven en el repo [nodo-cero-bo/workflows](https://github.com/nodo-cero-bo/workflows), cada uno en su carpeta con tres archivos: `workflow.json` (lo que se importa), `README.md` (qué hace y cómo probarlo) y `meta.json` (lo que lee la página).
@@ -70,11 +72,13 @@ Elegí la forma que te quede más cómoda. Las tres dejan el mismo resultado.
 
    | Si el workflow empieza con | Para probarlo | Para que funcione por su cuenta |
    |---|---|---|
-   | **Trigger manually** | **Execute** (ejecutar el workflow), abajo del canvas | No hace falta publicar. |
-   | **On form submission** (formulario) | **Execute** abre el formulario de prueba. | **Publish** y compartís la URL de producción del formulario. |
-   | **On webhook call** (webhook) | **Execute** o **Listen for test event**, y llamá a la **Test URL**. | **Publish** y usá la **Production URL**. |
+   | **Trigger manually** | **Execute workflow** (ejecutar el workflow), abajo del canvas | No hace falta publicar. |
+   | **On form submission** (formulario) | **Execute workflow** abre el formulario de prueba. | **Publish** y compartís la URL de producción del formulario. |
+   | **On webhook call** (webhook) | **Execute workflow** o **Listen for test event**, y llamá a la **Test URL**. | **Publish** y usá la **Production URL**. |
    | **On chat message** (chat) | **Open chat**, abajo del canvas. | **Publish**; con **Make Chat Publicly Available** tenés un chat con URL propia. |
-   | **On a schedule** (horario) | **Execute** | **Publish** y corre a la hora definida. |
+   | **On a schedule** (horario) | **Execute workflow** | **Publish** y corre a la hora definida. |
+
+   **Si el workflow tiene dos disparadores o más** (por ejemplo, un formulario y **Al tocar Execute**, o un horario y **Al tocar Execute**), el botón de abajo dice **Execute workflow from** y el nombre de uno de ellos, por ejemplo **Execute workflow from Formulario de reportes**. La flechita del costado abre un desplegable para elegir desde cuál arrancar: para probar con los datos de ejemplo, elegí el disparador manual (en estos workflows se llama **Al tocar Execute**, **Al hacer clic en Probar**, **Probar sin la página** o **Ejecutar a mano**). Si el botón dice **Execute** a secas, es la versión compacta del mismo botón.
 
 5. **Mirá el resultado** en el **Output** de cada nodo o en la pestaña **Executions**.
 
@@ -105,7 +109,7 @@ curl.exe -X POST "https://tu-nombre.app.n8n.cloud/webhook-test/mi-ruta" -H "Cont
 | **Could not import workflow** o **Problem importing workflow** al usar una URL | El enlace tiene que ser el crudo (`raw.githubusercontent.com/...`), no la página de GitHub (`github.com/.../blob/...`). |
 | **Skipped … node(s) with missing type** o nodos con un signo de pregunta | Tu n8n es más viejo que el de los workflows (n8n 2.48.7). En n8n Cloud, actualizá la versión desde la consola de la nube ([Update your version](https://docs.n8n.io/deploy/use-n8n-cloud/update-your-version)). |
 | Un nodo marca que falta una credencial | Abrilo y elegí o creá la credencial ([guía 03](03-credenciales.md)). |
-| El webhook responde que no está registrado | La **Test URL** funciona mientras n8n está escuchando (después de **Execute**); la **Production URL**, cuando el workflow está publicado. |
+| El webhook responde que no está registrado | La **Test URL** funciona mientras n8n está escuchando (después de **Execute workflow**); la **Production URL**, cuando el workflow está publicado. |
 | Importaste el mismo workflow dos veces | No pasa nada: abrí el que sobra y, en el menú **···**, elegí **Archive**. Si después querés borrarlo del todo, el mismo menú muestra **Delete**. |
 
 ## Para seguir

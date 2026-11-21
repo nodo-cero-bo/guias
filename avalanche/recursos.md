@@ -2,7 +2,7 @@
 
 Todo lo de Avalanche Fuji en un lugar: Core Wallet, el faucet, el explorador, Avalanche Academy, Team1, la documentación de la C-Chain y los workflows de Nodo Cero para Fuji.
 
-Team1, el programa de comunidad de Avalanche, apoya el track de **Avalanche Fuji** de Nodo Cero, con mención especial para los equipos que integren Fuji en su proyecto.
+Team1, el programa de comunidad de Avalanche, apoya el track de **Avalanche Fuji** de Nodo Cero. La mención especial «Mejor uso de Avalanche Fuji» reconoce al equipo que mejor integre Fuji en su proyecto ([ganadores y menciones](../ganadores-y-menciones.md)).
 
 | De un vistazo | |
 |---|---|

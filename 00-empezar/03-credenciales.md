@@ -9,6 +9,8 @@ Qué es una credencial en n8n, cómo crear las que piden los workflows de Nodo C
 | **Tiempo estimado** | 10 minutos, más lo que tarde abrir la cuenta del servicio. |
 | **Qué necesitás** | Tu n8n abierto y la clave del servicio. Las guías [04](04-cuenta-supabase.md), [05](05-cuenta-clerk.md) y [07](07-clave-gemini.md) te dicen dónde está cada una. |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [credencial](../glosario.md#credencial), [API](../glosario.md#api), [JWT](../glosario.md#jwt), [webhook](../glosario.md#webhook) y [frase de recuperación](../glosario.md#frase-de-recuperación).
+
 ## Qué es una credencial
 
 Es la llave que n8n usa para entrar a otro servicio en tu nombre: una clave de API, un usuario y contraseña, un token. Se guarda cifrada en tu n8n, aparte del workflow, y muchos nodos pueden usar la misma.

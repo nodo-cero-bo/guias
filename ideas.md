@@ -9,6 +9,8 @@ Ideas de proyecto por área, cada una con los workflows de Nodo Cero con los que
 | **Tiempo estimado** | 15 minutos para elegir en equipo. |
 | **Qué necesitás** | Las ganas de resolver algo concreto. Para arrancar, tu n8n abierto ([guía 01](00-empezar/01-cuenta-n8n-cloud.md)). |
 
+Si ya eligieron [línea](lineas/README.md), cada una tiene además sus ideas para Santa Cruz y Bolivia: [IA](lineas/ia.md#ideas-para-santa-cruz-y-bolivia), [Web3](lineas/web3.md#ideas-para-santa-cruz-y-bolivia), [Apps](lineas/apps.md#ideas-para-santa-cruz-y-bolivia) e [Impacto](lineas/impacto.md#ideas-para-santa-cruz-y-bolivia).
+
 Áreas: [Educación](#educación) · [Salud](#salud) · [Ambiente](#ambiente) · [Emprendimiento](#emprendimiento) · [Comunidad](#comunidad) · [Finanzas](#finanzas) · [Web3](#web3) · [todos los workflows](#los-workflows-de-un-vistazo)
 
 ## Cómo usar este banco
@@ -114,6 +116,18 @@ Para cualquier idea con Fuji, empezá por [Core Wallet y Avalanche Fuji](00-empe
 | 40 | [Agente Web3 que lee Fuji](https://github.com/nodo-cero-bo/workflows/tree/main/40-proyectos/40-agente-web3-fuji) | Proyectos |
 | 41 | [Pagos en Fuji con login](https://github.com/nodo-cero-bo/workflows/tree/main/40-proyectos/41-pagos-fuji-con-login) | Proyectos |
 | 42 | [Reporte de KPIs del evento](https://github.com/nodo-cero-bo/workflows/tree/main/40-proyectos/42-reporte-kpis) | Proyectos |
+| 50 | [Asistente con Gemini en Vertex AI](https://github.com/nodo-cero-bo/workflows/tree/main/50-google-cloud/50-vertex-ai-asistente) | Google Cloud, IA |
+| 51 | [Opiniones con Cloud Natural Language](https://github.com/nodo-cero-bo/workflows/tree/main/50-google-cloud/51-sentimiento-natural-language) | Google Cloud, IA |
+| 52 | [Resumir y traducir con Google Cloud](https://github.com/nodo-cero-bo/workflows/tree/main/50-google-cloud/52-traducir-y-resumir) | Google Cloud, IA |
+| 53 | [Archivos a Cloud Storage](https://github.com/nodo-cero-bo/workflows/tree/main/50-google-cloud/53-archivos-a-cloud-storage) | Google Cloud |
+| 60 | [Alerta del clima en Santa Cruz](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/60-alerta-del-clima) | Casos de uso |
+| 61 | [Tipo de cambio: dólar a bolivianos](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/61-tipo-de-cambio) | Casos de uso |
+| 62 | [Noticias por RSS](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/62-noticias-rss) | Casos de uso |
+| 63 | [Leer una página web](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/63-leer-una-pagina-web) | Casos de uso |
+| 64 | [Limpiar una lista (CSV)](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/64-limpiar-una-lista) | Casos de uso |
+| 65 | [Clasificar mensajes con IA](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/65-clasificar-mensajes-con-ia) | Casos de uso, IA |
+| 66 | [Bot de Telegram con IA](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/66-bot-de-telegram-con-ia) | Casos de uso, IA |
+| 67 | [Reportes ambientales](https://github.com/nodo-cero-bo/workflows/tree/main/60-casos-de-uso/67-reportes-ambientales) | Casos de uso, IA, Supabase |
 
 ## Si algo falla
 

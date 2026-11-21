@@ -4,8 +4,10 @@
 // Auditor de las guías de Nodo Cero.
 // Revisa cada archivo .md del repo contra las reglas de la especificación:
 //   - texto: voseo sin signos de exclamación, sin emojis, «n8n» en minúscula, sin marcas ni frases prohibidas;
+//   - menciones especiales: nada más las dos que existen («Mejor uso de Avalanche Fuji» y «Mejor uso de Google Cloud»);
 //   - nada de claves, correos ni teléfonos;
-//   - estructura de cada guía (para quién es, qué vas a lograr, tiempo, qué necesitás, pasos, si algo falla, para seguir);
+//   - estructura de cada guía (para quién es, qué vas a lograr, tiempo, qué necesitás, pasos, si algo falla, para seguir),
+//     con los capítulos del tutorial contados como guías;
 //   - enlaces internos y anclas (#titulo) que existan;
 //   - enlaces al repo de workflows con ids que existan (y, si le pasás la carpeta, que la carpeta exista);
 //   - los enlaces de Core, Avalanche Builder Hub y Team1 con sus parámetros UTM.
@@ -48,6 +50,10 @@ const WORKFLOWS = {
   '30-supabase': ['30-formulario-a-supabase', '31-api-crud-supabase', '32-cargar-documentos-rag', '33-agente-con-memoria-y-rag',
     '34-supabase-webhook-ia'],
   '40-proyectos': ['40-agente-web3-fuji', '41-pagos-fuji-con-login', '42-reporte-kpis'],
+  '50-google-cloud': ['50-vertex-ai-asistente', '51-sentimiento-natural-language', '52-traducir-y-resumir',
+    '53-archivos-a-cloud-storage', '54-bigquery-respuestas'],
+  '60-casos-de-uso': ['60-alerta-del-clima', '61-tipo-de-cambio', '62-noticias-rss', '63-leer-una-pagina-web',
+    '64-limpiar-una-lista', '65-clasificar-mensajes-con-ia', '66-bot-de-telegram-con-ia', '67-reportes-ambientales'],
 };
 const EXTRAS = ['avalanche/contratos', 'clerk/app-ejemplo', 'supabase/sql'];
 
@@ -68,6 +74,9 @@ const FRASES = [
   ['«comunidad Nodo Cero»', /comunidad\s+nodo\s+cero/giu],
   ['atribución a una herramienta de IA', /(?:generad[oa]s?|hech[oa]s?|escrit[oa]s?|cread[oa]s?|redactad[oa]s?)\s+(?:con|por)\s+(?:una\s+|la\s+)?(?:ia|inteligencia artificial|chatgpt|claude|copilot|gemini)\b/giu],
   ['línea de coautoría', /co-authored-by/giu],
+  // Las menciones especiales son dos: «Mejor uso de Avalanche Fuji» y «Mejor uso de Google Cloud».
+  ['una mención que no existe (son «Mejor uso de Avalanche Fuji» y «Mejor uso de Google Cloud»)',
+    /mejor\s+uso\s+de\s+clerk|menci[oó]n(?:\s+(?:especial|al|a|de|del|por|para))*\s+(?:mejor\s+uso\s+de\s+)?(?:clerk|impacto)/giu],
 ];
 const EMOJI = /(?![©®™])[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{FE0F}\u{20E3}]/gu;
 const SECRETOS = [
@@ -198,9 +207,11 @@ function revisarEstructura(archivo, md) {
   if (!parrafo) aviso(archivo, 1, 'falta un párrafo de resumen después del título', '');
   else if (parrafo.length > 230) aviso(archivo, 1, 'el párrafo de resumen es largo (el sitio corta en 220)', `${parrafo.length} caracteres`);
 
-  const esGuia = /^(00-empezar|proyectos)\/\d\d-/.test(r);
+  // Las guías paso a paso: las de inicio, las de proyecto y los capítulos del tutorial.
+  const esGuia = /^(00-empezar|proyectos|tutorial)\/\d\d-/.test(r);
   if (!esGuia) {
-    // Las demás páginas (ideas, presentar, seguir construyendo, recursos) también llevan la ficha y el cierre.
+    // Las demás páginas (ideas, presentar, seguir construyendo, recursos, líneas, glosario, preguntas,
+    // ganadores y menciones) también llevan la ficha y el cierre.
     if (esReadme) return;
     for (const rot of ROTULOS) if (!md.includes(`**${rot}**`)) err(archivo, 1, 'falta un rótulo de la ficha', rot);
     for (const t of ['## Si algo falla', '## Para seguir']) {

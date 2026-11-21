@@ -79,11 +79,12 @@ Registralo en la vitrina con el formulario de **[Registrá tu proyecto](https://
 - [ ] El proyecto está registrado en la [vitrina](https://github.com/nodo-cero-bo/proyectos).
 - [ ] Ensayaron al menos dos veces.
 
-## Si tu proyecto usa Fuji o Clerk
+## Si tu proyecto usa Fuji, Google Cloud o Clerk
 
-Contalo con claridad en la demo y en el registro: el track de Avalanche Fuji tiene mención especial para los equipos que integren Fuji, y Clerk tiene una mención al mejor uso de Clerk.
+Contalo con claridad en la demo y en el registro. Hay tres lugares y dos menciones especiales, «Mejor uso de Avalanche Fuji» y «Mejor uso de Google Cloud»: qué reconoce cada una y cómo contarlo, en [Ganadores y menciones](ganadores-y-menciones.md).
 
 - **Fuji**: mostrá la transacción o el contrato en el [explorador de Fuji](https://build.avax.network/explorer/fuji/c-chain?utm_source=nodo-cero&utm_medium=github&utm_campaign=hackathon-n8n-bolivia-2026) y qué hace n8n con esos datos.
+- **Google Cloud**: nombrá cada servicio que usaste (Vertex AI, Cloud Translation, Cloud Natural Language, Cloud Storage) y mostrá su nodo en el canvas y el resultado, sin abrir la credencial.
 - **Clerk**: mostrá el login y cómo n8n verifica quién pide cada cosa (por ejemplo, el `401` cuando no hay sesión).
 
 ## Si algo falla

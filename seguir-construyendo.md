@@ -29,6 +29,9 @@ La prueba gratis de n8n Cloud dura 14 días. Si no pasás a un plan pago, al ter
 
 Para volver a usarlos, importalos como cualquier workflow de Nodo Cero ([guía 02](00-empezar/02-importar-workflows.md)) y reconectá tus credenciales.
 
+> [!IMPORTANT]
+> **Si usaste Google Cloud**, no lo dejes andando sin mirar: borrá la clave de la cuenta de servicio, revisá **Billing** y, si no lo vas a seguir usando, apagá el proyecto. Paso a paso en [Google Cloud y créditos](00-empezar/08-google-cloud.md#11-al-terminar-apagá-todo).
+
 > [!NOTE]
 > Si te quedaste sin prueba, n8n también se puede instalar en tu compu o en un servidor (self-hosted). Mirá [Host n8n](https://docs.n8n.io/deploy/host-n8n) y los planes de n8n Cloud en [n8n.io/pricing](https://n8n.io/pricing/). La guía oficial para descargar workflows de una prueba vencida está en [Download workflows](https://docs.n8n.io/deploy/use-n8n-cloud/download-workflows).
 

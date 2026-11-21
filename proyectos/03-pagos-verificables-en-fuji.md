@@ -10,7 +10,9 @@ Un verificador de pagos: alguien paga con AVAX de prueba, manda el hash de su tr
 | **Qué necesitás** | Tu n8n y Core Wallet en Fuji con AVAX de prueba ([guía 06](../00-empezar/06-core-wallet-y-fuji.md)). Para registrar pagos: Supabase ([guía 04](../00-empezar/04-cuenta-supabase.md)). Para el login: Clerk ([guía 05](../00-empezar/05-cuenta-clerk.md)). |
 | **Workflows** | [`12-fuji-leer-transaccion`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/12-fuji-leer-transaccion) · [`13-fuji-verificar-pago`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/13-fuji-verificar-pago) · [`41-pagos-fuji-con-login`](https://github.com/nodo-cero-bo/workflows/tree/main/40-proyectos/41-pagos-fuji-con-login) |
 
-Este proyecto es parte del track de **Avalanche Fuji**, que tiene mención especial para los equipos que integren Fuji.
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [transacción](../glosario.md#transacción), [hash](../glosario.md#hash), [wei](../glosario.md#avax-y-wei), [confirmaciones](../glosario.md#bloque-y-confirmaciones) y [explorador](../glosario.md#explorador).
+
+Este proyecto es parte del track de **Avalanche Fuji**, con el apoyo de Team1, y puede contarlo para la mención especial «Mejor uso de Avalanche Fuji» ([qué reconoce](../ganadores-y-menciones.md)).
 
 ## La idea
 
@@ -47,7 +49,7 @@ Lo que n8n revisa, y por qué:
 ### 2. El desafío del día: leer la transacción (workflow 12)
 
 1. Importá [`12-fuji-leer-transaccion`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/12-fuji-leer-transaccion). No pide credenciales.
-2. Pegá tu hash en el nodo **Tu hash** (66 caracteres: `0x` y 64 más) y tocá **Execute** (ejecutar el workflow).
+2. Pegá tu hash en el nodo **Tu hash** (66 caracteres: `0x` y 64 más) y tocá **Execute workflow** (ejecutar el workflow).
 3. Mirá la salida: quién envió, a quién, cuánto (en AVAX), el gas, el estado, el bloque y el enlace al explorador.
 4. Abrí el enlace del explorador y compará: son los mismos datos, leídos por n8n.
 5. Abrí los nodos uno por uno. Fijate cómo convierte los números hexadecimales a decimales y los wei a AVAX: es lo que vas a usar en todo lo demás.
@@ -55,7 +57,7 @@ Lo que n8n revisa, y por qué:
 ### 3. Verificá un pago (workflow 13)
 
 1. Importá [`13-fuji-verificar-pago`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/13-fuji-verificar-pago).
-2. En el nodo **Pedido de prueba** está el JSON que verifica: `txHash` (el hash), `destino` (la dirección de la «tienda»), `montoMinimo` (el mínimo **en AVAX**, por ejemplo `"0.01"`) y `confirmacionesMinimas` (1 si no lo cambiás). Trae un pago real de 0.5 AVAX: tocá **Execute** tal cual y abrí **Verificar el pago**, que tiene que decir `verificado: true`. Después poné tus datos.
+2. En el nodo **Pedido de prueba** está el JSON que verifica: `txHash` (el hash), `destino` (la dirección de la «tienda»), `montoMinimo` (el mínimo **en AVAX**, por ejemplo `"0.01"`) y `confirmacionesMinimas` (1 si no lo cambiás). Trae un pago real de 0.5 AVAX: tocá **Execute workflow** tal cual y abrí **Verificar el pago**, que tiene que decir `verificado: true`. Después poné tus datos.
 3. Ahora rompelo a propósito, de a una cosa por vez:
    - Pedí un monto mínimo más alto que el que mandaste.
    - Poné otra dirección de destino.

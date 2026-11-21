@@ -10,6 +10,8 @@ Pedidos, consultas y catálogo de un emprendimiento atendidos por n8n: un formul
 | **Qué necesitás** | Tu n8n, un proyecto de Supabase ([guía 04](../00-empezar/04-cuenta-supabase.md)) y, para el asistente, una clave de Gemini ([guía 07](../00-empezar/07-clave-gemini.md)). Y el emprendimiento: sus productos, precios y preguntas frecuentes. |
 | **Workflows** | [`02-mi-primera-api`](https://github.com/nodo-cero-bo/workflows/tree/main/00-fundamentos/02-mi-primera-api) · [`30-formulario-a-supabase`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/30-formulario-a-supabase) · [`31-api-crud-supabase`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/31-api-crud-supabase) · [`32-cargar-documentos-rag`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/32-cargar-documentos-rag) · [`33-agente-con-memoria-y-rag`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/33-agente-con-memoria-y-rag) · opcional: [`13-fuji-verificar-pago`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/13-fuji-verificar-pago) |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [API](../glosario.md#api), [base de datos](../glosario.md#base-de-datos), [RAG](../glosario.md#rag), [agente](../glosario.md#agente) y [hash](../glosario.md#hash).
+
 ## La idea
 
 No automatices todo de golpe. Elegí **el proceso que más tiempo le come al negocio** y empezá por ahí. Este proyecto propone tres piezas que se suman de a una:
@@ -137,4 +139,4 @@ Si el negocio es real, pedí permiso antes de mostrar su nombre y sus datos, y u
 
 ---
 
-[Guías de proyecto](README.md) · Anterior: [Impacto ambiental o social](07-impacto-ambiental-o-social.md) · Siguiente: [Banco de ideas](../ideas.md)
+[Guías de proyecto](README.md) · Anterior: [Impacto ambiental o social](07-impacto-ambiental-o-social.md) · Siguiente: [Traducí y resumí con Google Cloud](09-traducir-y-resumir-con-google-cloud.md)

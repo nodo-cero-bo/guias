@@ -9,6 +9,8 @@ Sacá una clave gratis de la API de Gemini en Google AI Studio y conectala a n8n
 | **Tiempo estimado** | 10 minutos |
 | **Qué necesitás** | Una cuenta de Google y tu n8n abierto. |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [LLM](../glosario.md#llm), [agente](../glosario.md#agente), [mensaje de sistema](../glosario.md#prompt-y-mensaje-de-sistema), [credencial](../glosario.md#credencial) y [cuota](../glosario.md#cuota).
+
 ## Pasos
 
 ### 1. Creá la clave en Google AI Studio
@@ -75,8 +77,9 @@ En n8n Cloud, algunos nodos de IA muestran **Use Gateway credits** en el campo d
 ## Para seguir
 
 - Ahora sí: elegí una [guía de proyecto](../proyectos/README.md). Para IA, empezá por [Asistente con IA para tu comunidad](../proyectos/01-asistente-ia-para-tu-comunidad.md).
+- Si además querés traducir, analizar opiniones o usar Gemini en Vertex AI: [Google Cloud y créditos](08-google-cloud.md).
 - Documentación oficial: [credencial de Gemini en n8n](https://docs.n8n.io/integrations/builtin/credentials/googleai/), el nodo [AI Agent](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.agent/), [IA en n8n](https://docs.n8n.io/build/integrate-ai), [claves de la API de Gemini](https://aistudio.google.com/docs/api-key) y [precios y nivel gratuito](https://aistudio.google.com/docs/pricing).
 
 ---
 
-[Índice](../README.md) · Anterior: [Core Wallet y Avalanche Fuji](06-core-wallet-y-fuji.md) · Siguiente: [Guías de proyecto](../proyectos/README.md)
+[Índice](../README.md) · Anterior: [Core Wallet y Avalanche Fuji](06-core-wallet-y-fuji.md) · Siguiente: [Google Cloud y créditos](08-google-cloud.md) (opcional) · [Guías de proyecto](../proyectos/README.md)

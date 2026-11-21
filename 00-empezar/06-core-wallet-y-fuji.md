@@ -9,6 +9,8 @@ Descargá Core Wallet, creá una wallet de prueba, pasala a la red Fuji, pedí A
 | **Tiempo estimado** | 20 minutos |
 | **Qué necesitás** | Chrome (o un navegador basado en Chromium) o tu celular, y papel y lápiz para anotar la frase de recuperación. |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [wallet](../glosario.md#wallet), [testnet](../glosario.md#testnet), [frase de recuperación](../glosario.md#frase-de-recuperación), [faucet](../glosario.md#faucet), [dirección](../glosario.md#dirección), [hash](../glosario.md#hash), [gas](../glosario.md#gas), [explorador](../glosario.md#explorador), [JSON-RPC](../glosario.md#rpc-y-json-rpc) y [wei](../glosario.md#avax-y-wei).
+
 ## Qué es Fuji
 
 Avalanche tiene una red principal, donde los tokens valen plata, y **Fuji**, su red de prueba: funciona igual, pero sus AVAX no tienen valor y se piden gratis. Es el lugar ideal para aprender, probar y mostrar un proyecto. Los workflows de Nodo Cero leen la **C-Chain** de Fuji, la cadena compatible con Ethereum.

@@ -10,6 +10,8 @@ Un chat público que responde preguntas con la información de tus propios docum
 | **Qué necesitás** | Tu n8n ([guía 01](../00-empezar/01-cuenta-n8n-cloud.md)), una clave de Gemini ([guía 07](../00-empezar/07-clave-gemini.md)), un proyecto de Supabase con las tablas de Nodo Cero y las credenciales **Supabase API** y **Postgres** ([guía 04](../00-empezar/04-cuenta-supabase.md)), y uno o dos documentos públicos de tu comunidad (PDF o texto). |
 | **Workflows** | [`05-agente-ia`](https://github.com/nodo-cero-bo/workflows/tree/main/00-fundamentos/05-agente-ia) · [`32-cargar-documentos-rag`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/32-cargar-documentos-rag) · [`33-agente-con-memoria-y-rag`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/33-agente-con-memoria-y-rag) |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [agente](../glosario.md#agente), [RAG](../glosario.md#rag), [embeddings](../glosario.md#embeddings), [memoria](../glosario.md#memoria) y [mensaje de sistema](../glosario.md#prompt-y-mensaje-de-sistema).
+
 ## La idea
 
 Un modelo de IA sabe mucho del mundo, pero nada de tu comunidad. La técnica para que responda con tu información se llama **RAG** (generación aumentada con búsqueda): antes de contestar, el agente busca en tus documentos los pedacitos que más se parecen a la pregunta y responde con eso.
@@ -50,7 +52,7 @@ flowchart LR
 
 1. Importá [`32-cargar-documentos-rag`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/32-cargar-documentos-rag) y conectá las credenciales que pide: **Google Gemini(PaLM) Api** (para los embeddings) y **Supabase API**.
 2. Leé la nota grande del workflow: dice qué tipos de archivo acepta.
-3. Tocá **Execute** (ejecutar el workflow): se abre el formulario de prueba. Subí tu primer documento.
+3. Tocá **Execute workflow** (ejecutar el workflow): se abre el formulario de prueba. Subí tu primer documento.
 4. Volvé a Supabase, a la tabla `documentos`: tiene que haber filas nuevas, una por cada pedacito.
 5. Repetí con los demás documentos.
 

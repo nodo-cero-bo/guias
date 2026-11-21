@@ -10,6 +10,8 @@ Un formulario de n8n que guarda cada respuesta en Supabase y, en cuanto entra, l
 | **Qué necesitás** | Tu n8n, un proyecto de Supabase con las tablas de Nodo Cero ([guía 04](../00-empezar/04-cuenta-supabase.md)) y una clave de Gemini ([guía 07](../00-empezar/07-clave-gemini.md)). |
 | **Workflows** | [`04-formulario`](https://github.com/nodo-cero-bo/workflows/tree/main/00-fundamentos/04-formulario) (para entrar en calor) · [`30-formulario-a-supabase`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/30-formulario-a-supabase) · [`34-supabase-webhook-ia`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/34-supabase-webhook-ia) |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [webhook](../glosario.md#webhook), [base de datos](../glosario.md#base-de-datos), [clasificar](../glosario.md#clasificar) y [RLS](../glosario.md#rls).
+
 ## La idea
 
 Dos workflows chicos, cada uno con una tarea, conectados por la base de datos:
@@ -30,7 +32,7 @@ Separarlos tiene una ventaja: la fila se puede insertar desde el formulario, des
 ### 1. Entrá en calor con un formulario (opcional)
 
 1. Importá [`04-formulario`](https://github.com/nodo-cero-bo/workflows/tree/main/00-fundamentos/04-formulario). No pide credenciales.
-2. Tocá **Execute** (ejecutar el workflow): se abre el formulario de prueba. Completalo y mirá la página final.
+2. Tocá **Execute workflow** (ejecutar el workflow): se abre el formulario de prueba. Completalo y mirá la página final.
 3. Abrí el nodo del formulario y agregá un campo. Volvé a probar.
 
 ### 2. Prepará la tabla
@@ -41,7 +43,7 @@ Separarlos tiene una ventaja: la fila se puede insertar desde el formulario, des
 ### 3. El formulario que guarda (workflow 30)
 
 1. Importá [`30-formulario-a-supabase`](https://github.com/nodo-cero-bo/workflows/tree/main/30-supabase/30-formulario-a-supabase) y conectá **Supabase API**.
-2. Tocá **Execute**, completá el formulario y mirá la fila nueva en Supabase.
+2. Tocá **Execute workflow**, completá el formulario y mirá la fila nueva en Supabase.
 3. Publicalo con **Publish**. Abrí el nodo del formulario y copiá la **Production URL**: ese es el enlace que vas a compartir.
 
 ### 4. La IA que clasifica (workflow 34)

@@ -10,7 +10,9 @@ Un agente de IA que contesta en español preguntas sobre la red Fuji de Avalanch
 | **Qué necesitás** | Tu n8n, una clave de Gemini ([guía 07](../00-empezar/07-clave-gemini.md)) y, para probar, una dirección y un hash de Fuji ([guía 06](../00-empezar/06-core-wallet-y-fuji.md)). No hace falta ninguna clave de Avalanche: el RPC público es abierto. |
 | **Workflows** | [`40-agente-web3-fuji`](https://github.com/nodo-cero-bo/workflows/tree/main/40-proyectos/40-agente-web3-fuji) · [`15-fuji-token-erc20`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/15-fuji-token-erc20) · [`16-fuji-eventos-contrato`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/16-fuji-eventos-contrato) |
 
-Este proyecto es parte del track de **Avalanche Fuji**, que tiene mención especial para los equipos que integren Fuji.
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [agente](../glosario.md#agente), [herramienta](../glosario.md#herramienta), [JSON-RPC](../glosario.md#rpc-y-json-rpc), [token](../glosario.md#token) y [evento](../glosario.md#evento).
+
+Este proyecto es parte del track de **Avalanche Fuji**, con el apoyo de Team1, y puede contarlo para la mención especial «Mejor uso de Avalanche Fuji» ([qué reconoce](../ganadores-y-menciones.md)).
 
 ## La idea
 

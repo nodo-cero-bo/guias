@@ -9,6 +9,8 @@ Creá una aplicación de Clerk para que tu proyecto tenga login de verdad, y enc
 | **Tiempo estimado** | 20 minutos |
 | **Qué necesitás** | Un correo (o una cuenta de Google o GitHub), tu n8n abierto y, si vas a guardar perfiles, tu proyecto de Supabase ([guía 04](04-cuenta-supabase.md)). |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [Clerk](../glosario.md#clerk), [sesión](../glosario.md#sesión), [JWT](../glosario.md#jwt), [webhook](../glosario.md#webhook) y [clave secreta](../glosario.md#clave-publicable-y-clave-secreta).
+
 ## Qué es Clerk y cómo se conecta con n8n
 
 Clerk resuelve el login completo: la pantalla para entrar, las sesiones y la lista de usuarias. En los proyectos de Nodo Cero lo usamos de dos maneras:

@@ -11,21 +11,23 @@ Creá tu cuenta de prueba en n8n Cloud, recorré el editor y corré tu primer wo
 
 ## Primero, cuatro ideas
 
-- Un **workflow** es una receta: pasos que corren en orden, de izquierda a derecha.
-- Cada paso es un **nodo**. Uno recibe datos, otro los transforma, otro los guarda o los manda a otro servicio.
-- El primer nodo es el **trigger** (disparador): decide cuándo arranca todo. Puede ser un clic, un formulario, un mensaje de chat, una hora del día o un pedido a una URL.
-- Cada vez que el workflow corre queda una **ejecución**: un registro de qué entró y qué salió de cada nodo. Es tu mejor herramienta para entender y corregir.
+- Un [**workflow**](../glosario.md#workflow) es una receta: pasos que corren en orden, de izquierda a derecha.
+- Cada paso es un [**nodo**](../glosario.md#nodo). Uno recibe datos, otro los transforma, otro los guarda o los manda a otro servicio.
+- El primer nodo es el [**trigger**](../glosario.md#trigger) (disparador): decide cuándo arranca todo. Puede ser un clic, un formulario, un mensaje de chat, una hora del día o un pedido a una URL.
+- Cada vez que el workflow corre queda una [**ejecución**](../glosario.md#ejecución): un registro de qué entró y qué salió de cada nodo. Es tu mejor herramienta para entender y corregir.
 
 <details>
 <summary>Más palabras que vas a escuchar hoy</summary>
 
 | Palabra | Qué quiere decir |
 |---|---|
-| Credencial | La llave guardada que n8n usa para conectarse a un servicio (una clave de API, un usuario y contraseña). Se crea una vez y la usan muchos nodos. |
-| Expresión | Un pedacito de código entre llaves dobles, como `{{ $json.nombre }}`, que toma un dato del paso anterior. |
-| Item | Cada fila de datos que viaja entre nodos. Si un nodo recibe tres items, en general trabaja tres veces. |
-| Publicar | Poner el workflow «en producción» para que corra por su cuenta cuando llega un formulario, un webhook o la hora programada. |
-| Canvas | El lienzo donde armás el workflow arrastrando y conectando nodos. |
+| [Credencial](../glosario.md#credencial) | La llave guardada que n8n usa para conectarse a un servicio (una clave de API, un usuario y contraseña). Se crea una vez y la usan muchos nodos. |
+| [Expresión](../glosario.md#expresión) | Un pedacito de código entre llaves dobles, como `{{ $json.nombre }}`, que toma un dato del paso anterior. |
+| [Item](../glosario.md#item) | Cada fila de datos que viaja entre nodos. Si un nodo recibe tres items, en general trabaja tres veces. |
+| [Publicar](../glosario.md#publicar) | Poner el workflow «en producción» para que corra por su cuenta cuando llega un formulario, un webhook o la hora programada. |
+| [Canvas](../glosario.md#canvas) | El lienzo donde armás el workflow arrastrando y conectando nodos. |
+
+Todas las palabras nuevas, con un ejemplo cada una, están en el [glosario](../glosario.md).
 
 </details>
 
@@ -50,7 +52,7 @@ Creá tu cuenta de prueba en n8n Cloud, recorré el editor y corré tu primer wo
 | Botón **+** arriba a la izquierda | **New workflow** y **New credential**, entre otras cosas. También está el botón **Create** arriba a la derecha de Overview. |
 | Encabezado del canvas | El nombre del workflow, el botón **Publish** y el menú **···** (importar, exportar, duplicar, historial de versiones). |
 | Pestañas **Editor** y **Executions** | Arriba del canvas: una para armar, otra para ver cada vez que el workflow corrió. |
-| Botón **Execute** | Abajo del canvas: ejecuta el workflow a mano para probarlo. |
+| Botón **Execute workflow** | Abajo del canvas: ejecuta el workflow a mano para probarlo. |
 
 Cuando abrís un nodo con doble clic ves tres zonas: **Input** a la izquierda (lo que llega), los parámetros en el centro y **Output** a la derecha (lo que sale). La salida se puede mirar como **Table**, **JSON** o **Schema**.
 
@@ -61,7 +63,7 @@ Cuando abrís un nodo con doble clic ves tres zonas: **Input** a la izquierda (l
 3. Tocá el **+** que aparece a la derecha del nodo, buscá **Edit Fields (Set)** y agregalo.
 4. Dentro del nodo, agregá un campo llamado `saludo` con el valor `Hola desde Nodo Cero`.
 5. Agregá otro campo llamado `hora` y en el valor escribí `{{ $now.toFormat('HH:mm') }}`. Vas a ver que el texto se pone de otro color: es una expresión, y n8n la calcula cada vez.
-6. Cerrá el nodo y tocá **Execute** (ejecutar el workflow). Abrí el nodo de nuevo y mirá el **Output**: tenés tu primer dato armado por n8n.
+6. Cerrá el nodo y tocá **Execute workflow** (ejecutar el workflow). Abrí el nodo de nuevo y mirá el **Output**: tenés tu primer dato armado por n8n.
 
 > [!TIP]
 > No hace falta guardar: n8n guarda cada cambio por su cuenta a los pocos segundos y arma un historial de versiones (menú **···**, **Version history**).

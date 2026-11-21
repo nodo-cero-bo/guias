@@ -10,7 +10,9 @@ Desplegá tu propio contrato inteligente en la red Fuji con Remix y Core Wallet,
 | **Qué necesitás** | Core Wallet en Fuji con AVAX de prueba ([guía 06](../00-empezar/06-core-wallet-y-fuji.md)), Chrome o un navegador basado en Chromium con la extensión de Core, tu n8n y la carpeta [`avalanche/contratos`](https://github.com/nodo-cero-bo/workflows/tree/main/avalanche/contratos) del repo de workflows. |
 | **Workflows** | [`16-fuji-eventos-contrato`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/16-fuji-eventos-contrato) · [`avalanche/contratos`](https://github.com/nodo-cero-bo/workflows/tree/main/avalanche/contratos) · para escuchar seguido, el patrón de [`14-fuji-monitor-wallet`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/14-fuji-monitor-wallet) |
 
-Este proyecto es parte del track de **Avalanche Fuji**, que tiene mención especial para los equipos que integren Fuji.
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [contrato inteligente](../glosario.md#contrato-inteligente), [evento](../glosario.md#evento), [ABI](../glosario.md#abi), [hash](../glosario.md#hash) y [gas](../glosario.md#gas).
+
+Este proyecto es parte del track de **Avalanche Fuji**, con el apoyo de Team1, y puede contarlo para la mención especial «Mejor uso de Avalanche Fuji» ([qué reconoce](../ganadores-y-menciones.md)).
 
 ## La idea
 
@@ -91,7 +93,7 @@ Los parámetros `indexed` viajan en los topics siguientes: acá, `autora` (quien
 ### 5. Leé los eventos con n8n (workflow 16)
 
 1. Importá [`16-fuji-eventos-contrato`](https://github.com/nodo-cero-bo/workflows/tree/main/10-avalanche-fuji/16-fuji-eventos-contrato). No pide credenciales.
-2. Tocá **Execute** (ejecutar el workflow) tal cual viene y abrí **Decodificar los eventos**: el ejemplo trae las transferencias del USDC de prueba de los últimos 300 bloques, ya decodificadas.
+2. Tocá **Execute workflow** (ejecutar el workflow) tal cual viene y abrí **Decodificar los eventos**: el ejemplo trae las transferencias del USDC de prueba de los últimos 300 bloques, ya decodificadas.
 3. En el nodo **Qué buscar**, poné los datos de tu contrato:
 
    | Campo | Valor |
@@ -101,7 +103,7 @@ Los parámetros `indexed` viajan en los topics siguientes: acá, `autora` (quien
    | `desdeBloque` | el bloque del despliegue |
    | `decimales` | vacío |
 
-4. Tocá **Execute** otra vez: sale un ítem por proyecto registrado, con `autora`, `nombre`, `enlace` y `cuando` legibles. Por ejemplo:
+4. Tocá **Execute workflow** otra vez: sale un ítem por proyecto registrado, con `autora`, `nombre`, `enlace` y `cuando` legibles. Por ejemplo:
 
    ```json
    { "evento": "ProyectoRegistrado", "autora": "0x00000000000000000000000000000000000c0de0", "nombre": "Las Fujinas", "enlace": "https://github.com/nodo-cero-bo/proyectos", "cuando": "21/11/2026 03:00:00" }

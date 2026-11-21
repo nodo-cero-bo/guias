@@ -10,7 +10,9 @@ Una página donde las personas inician sesión con Clerk, n8n verifica quién pi
 | **Qué necesitás** | Tu n8n, una aplicación de Clerk ([guía 05](../00-empezar/05-cuenta-clerk.md)), un proyecto de Supabase con las tablas de Nodo Cero ([guía 04](../00-empezar/04-cuenta-supabase.md)), un editor de texto (VS Code o el que uses) y Python o Node.js en tu compu para servir la página. |
 | **Workflows** | [`20-clerk-webhook-a-supabase`](https://github.com/nodo-cero-bo/workflows/tree/main/20-clerk/20-clerk-webhook-a-supabase) · [`21-clerk-api-protegida`](https://github.com/nodo-cero-bo/workflows/tree/main/20-clerk/21-clerk-api-protegida) · [`clerk/app-ejemplo`](https://github.com/nodo-cero-bo/workflows/tree/main/clerk/app-ejemplo) |
 
-Clerk apoya Nodo Cero y tiene una mención al mejor uso de Clerk: este proyecto es un buen punto de partida.
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [sesión](../glosario.md#sesión), [JWT](../glosario.md#jwt), [webhook](../glosario.md#webhook), [RLS](../glosario.md#rls) y [API](../glosario.md#api).
+
+Clerk, que apoya Nodo Cero, es la herramienta de login del día, y este proyecto es la forma más completa de usarlo. Es el corazón de la línea [Apps con login y datos](../lineas/apps.md).
 
 ## La idea
 

@@ -9,6 +9,8 @@ Creá un proyecto gratis en Supabase, encontrá su URL y sus claves, cargá las 
 | **Tiempo estimado** | 25 minutos |
 | **Qué necesitás** | Una cuenta de GitHub o un correo, tu n8n abierto y la carpeta [`supabase/sql`](https://github.com/nodo-cero-bo/workflows/tree/main/supabase/sql) del repo de workflows. |
 
+Palabras de esta guía, explicadas con un ejemplo en el [glosario](../glosario.md): [base de datos](../glosario.md#base-de-datos), [tabla](../glosario.md#tabla-fila-y-columna), [SQL](../glosario.md#sql), [RLS](../glosario.md#rls), [clave secreta](../glosario.md#clave-publicable-y-clave-secreta), [embeddings](../glosario.md#embeddings) y [base vectorial](../glosario.md#base-vectorial).
+
 ## Qué es Supabase
 
 Una base de datos Postgres en la nube con todo lo que hace falta alrededor: una API lista para usar, login, archivos y extensiones como `pgvector`, que permite guardar «embeddings» para que la IA busque en tus documentos por significado y no por palabras exactas. En la hackathon la usamos como la memoria de los proyectos: todo lo que entra por n8n puede quedar guardado ahí.
